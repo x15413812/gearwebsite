@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Makeup</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+	<body>
+	<div class="navbar-static-top navbar-inverse" id="home">
+		<div class="container">
+			<div class="navbar-brand">
+				<a href="#">DUBLIN MUA</a>
+			</div>
+			<button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
+				Menu
+			</button>
+			<div class="collapse navbar-collapse navHeaderCollapse">
+				<ul class="nav navbar-nav navbar">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="makeup.html">Makeup</a></li>
+					<li><a href="minx.html">Minx</a></li>
+					<li><a href="nails.html">Nails</a></li>
+					<li><a href="gallery.html">Gallery</a></li>
+				</ul>
+				<form class="navbar-form navbar-right" role="search">
+				<div class="form-group">
+					<input type="text" class="form-control" placeholder="Search">
+				</div>
+				<button type="submit" class="btn btn-default">&#128269;</button>
+				</form>
+			</div>
+		</div>
+	</div>
+	
+	<div class="jumbotron"id="galleryjumbo">
+		<div class="container">
+			<h1>GALLERY!</h1>
+			<p>This is our demo site, I hope you like it!</p>
+			<p>All code can be found on my GitHub account, and is free to use, modify and sell!</p>
+			<p><a href="http://facebook.com" target="_blank" class="btn btn-primary btn-lg">Facebook!</a></p>
+		</div>
+	</div>
+
+	
+	<div class="container padding" id="nails">
+		<form role="form">
+			<div class="form-group">
+				<label for="email">Email:</label>
+				<input type="email" class="form-control" id="email" name="email" placeholder="example@example.com"/>
+			</div>
+			<div class="form-group">
+				<label for="name">Name:</label>
+				<input type="text" class="form-control" id="name" name="name" placeholder="Your name here"/>
+			
+			</div>
+			<div class="form-group">
+				<label for="message">Message:</label>
+				<textarea class="form-control" name="message" id="message" placeholder="Your message here"></textarea>
+			</div>
+			<div class="form-group">
+				<input type="checkbox" /> Send me promotional content
+			</div>
+			<button type="submit" class="btn btn-default">Submit</button>
+		</form>
+	</div>
+	
+	<div class="alt2">
+		<div class="container">
+			<footer>
+				<br /> &copy; Dublin Mua <br /><br />
+				<a id="arrow" href="#home">&#8679; TOP &#8679;</a>
+			</footer>
+		</div>
+	</div>
+	
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<script>
+	$(function() {
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
+	</script>
+	</body>
+</html>
