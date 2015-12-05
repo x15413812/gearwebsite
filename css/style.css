@@ -1,73 +1,96 @@
+#dublinmuabrand{
+font-size: 25px;
+font-family: Comic Sans MS, cursive, sans-serif; /*http://www.w3schools.com/cssref/css_websafe_fonts.asp*/
+text-transform:uppercase;
+}
+.nav>li>a{
+text-transform:uppercase;
+}
+
 .jumbotron
 {
-background-image:url('../onepalm.png');
-background-repeat:no-repeat;
-background-attachment:fixed;
-min-height:200px;
-margin-bottom:0px;
-color:white;
-  
-}    
-
-#makeupjumbo{
-background-image:url('../f.png');
+background-image:url('../redandwhite.png');
 background-size:cover;
-background-attachment:fixed;
-min-height:900px;
+background-position:10% 70%;
+min-height:300px;
 margin-bottom:0px;
-color:white;
 }
 
-#arrow{
-	font-size:40px;
-	color:black;
+.text{
+text-align:center;
+font-size:80px;
+text-transform:uppercase;
+font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
 }
 
-#minxjumbo{
-background-image:url('../c.png');
-background-size:cover;
-background-attachment:fixed;
-min-height:900px;
-margin-bottom:0px;
-color:white;
+.border{
+text-align:center;
+font-size:40px;
+border: 2px solid #666666;
+padding:10px;
 }
 
-#nailsjumbo{
-background-image:url('../palmd.png');
-background-size:cover;
-background-attachment:fixed;
-min-height:900px;
-margin-bottom:0px;
-color:white;
-}
-
-#galleryjumbo{
-background-image:url('../pp.png');
-background-size:cover;
-background-attachment:fixed;
-min-height:900px;
-margin-bottom:0px;
-color:white;
+.paragraph{
+color:#000000;
+text-align:center;
 }
 
 .alt1
 {
-background:#eee;
-min-height:400px;
+background: #eee;
+min-height: 400px;
 }
 
 .alt2
 {
-background:#333;
-min-height:150px;
-color:#fff;
-text-align:center;
+background: #333;
+min-height: 50px;
+color: #fff;
+text-align: center;
+font-size: 13px;
 }
 
 .padding
 {
-padding-top:20px;
-padding-bottom:20px;
+padding-top: 20px;
+padding-bottom: 20px;
 }
 
 
+.btn-default{
+float:right;
+}
+
+.modal-title{
+font-size:30px;
+}
+
+
+#form{
+background-color: #b8b894;
+padding: 20px;
+color:black;
+}
+
+
+.form{
+background-color: #f5f5f0;
+padding: 20px;
+	
+}
+
+.fa-facebook-square, .fa-instagram{
+padding:15px;
+float:left;
+}
+
+
+.btn-outline {
+background-color: transparent;
+color: white;
+}
+
+.btn-primary.btn-outline {
+color:#000000;
+
+}
