@@ -1,6 +1,6 @@
 #dublinmuabrand{
-font-size: 25px;
-font-family: Comic Sans MS, cursive, sans-serif; /*http://www.w3schools.com/cssref/css_websafe_fonts.asp*/
+font-size:25px;
+font-family:"Comic Sans MS, cursive, sans-serif"; /*http://www.w3schools.com/cssref/css_websafe_fonts.asp*/
 text-transform:uppercase;
 }
 .nav>li>a{
@@ -10,6 +10,29 @@ text-transform:uppercase;
 .jumbotron
 {
 background-image:url('../redandwhite.png');
+background-size:cover;
+background-position:10% 70%;
+min-height:300px;
+margin-bottom:0px;
+}
+#contactjumbo{
+background-image:url('../lights.png');
+background-size:cover;
+background-position:10% 70%;
+min-height:300px;
+margin-bottom:0px;
+}
+
+#minxjumbo{
+background-image:url('../purpleflow.png');
+background-size:cover;
+background-position:10% 65%;
+min-height:300px;
+margin-bottom:0px;
+}
+
+#nailjumbo{
+background-image:url('../purpleflower.png');
 background-size:cover;
 background-position:10% 70%;
 min-height:300px;
@@ -37,57 +60,68 @@ text-align:center;
 
 .alt1
 {
-background: #eee;
-min-height: 400px;
+background:#eee;
+min-height:400px;
+}
+
+
+input:focus {
+    background-color:#e5e5ff;
 }
 
 .alt2
 {
-background: #333;
-min-height: 50px;
-color: #fff;
-text-align: center;
-font-size: 13px;
+background:#1F1B1B;
+min-height:50px;
+color:#989292;
+text-align:center;
+font-size:13px;
 }
+
+.arrow{
+float:right;
+font-size:40px;
+color:#989292;
+}
+
 
 .padding
 {
-padding-top: 20px;
-padding-bottom: 20px;
+padding-top:20px;
+padding-bottom:50px;
 }
-
 
 .btn-default{
 float:right;
+border-radius:0px;
 }
 
 .modal-title{
 font-size:30px;
 }
 
-
 #form{
-background-color: #b8b894;
-padding: 20px;
+background-color:#DCCCE7;
+padding:20px;
 color:black;
 }
 
-
 .form{
-background-color: #f5f5f0;
-padding: 20px;
+background-color:#f2f2f2;
+padding:20px;
 	
 }
 
+
 .fa-facebook-square, .fa-instagram{
 padding:15px;
-float:left;
+float:right;
 }
 
 
 .btn-outline {
-background-color: transparent;
-color: white;
+background-color:transparent;
+color:white;
 }
 
 .btn-primary.btn-outline {

@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Contact</title>
+		<title>Dublin Mua</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="../css/bootstrap.min.css" />
 		<link rel="stylesheet" href="../css/style.css" />
 		<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
 	</head>
 	<body>
-	<div class="navbar-static-top navbar">
+	<div class="navbar-static-top navbar" id="contact">
 		<div class="container">
 			<div class="navbar-brand">
-				<a id="dublinmuabrand" href="makeup.html">Dublin Mua</a>
+				<a id="dublinmuabrand" href="../makeup/index.html">Dublin Mua</a>
 			</div>
 			<br />
 		<div class="container">
@@ -20,7 +20,7 @@
 			</button>
 			<div class="collapse navbar-collapse navHeaderCollapse">
 				<ul class="nav navbar-nav navbar">
-					<li><a href="../makeup/index.html">Make-up</a></li>
+					<li><a href="../index.html">Make-up</a></li>
 					<li><a href="../minx/index.html">Mink Lashes</a></li>
 					<li><a href="../nails/index.html">Nails</a></li>
 					<li><a href="#">Contact</a></li>
@@ -30,12 +30,16 @@
 	</div>
 	</div>
 	
-
+<div class="jumbotron" id="contactjumbo">
+	<div class="container">
+		<h2 class="text">dublin<br>mua</h2>
+	</div>
+</div>
 	
 	<div class="container">
 		<div class="row padding">
 			<div class="col-md-12">
-				<h2 class="text-center">Contact Me</h2>
+				<h2 class="border">Contact Me</h2><br><br>
 				<p class="text-center">Know more Muas that deserve to be on the website? Let me know below.</p>		
 			</div>
 		</div>	
@@ -43,26 +47,29 @@
 	
 	
 	<div class="container padding">
-		<form id="form">
-			<div class="form-group">
-				<label for="email">Your email</label>
-				<input type="email" class="form-control" id="email" name="email" placeholder="someone@example.com"/>
+		<form onsubmit="confirmInput()" action="dublinmua.gear.host" class="form">
+		<div>
+			<label input type="text" name="name">Name:</label>
+			<input type="text" class="form-control" placeholder="Your name"/>
 			</div>
 			<div class="form-group">
-				<label for="message">Message</label>
-				<textarea class="form-control" name="message" id="message" placeholder="Your message here"></textarea>
+				<label input type="text" name="your email">Your email</label>
+				<input type="email" class="form-control"  name="email" placeholder="someone@example.com"/>
 			</div>
-			<button type="submit" class="btn btn-default">Submit</button>
-		</form>
+			<div class="form-group">
+				<label input type="text" name="message">Message</label>
+				<textarea class="form-control" name="message"  placeholder="Your message here"></textarea> 
+				<button type="submit" class="btn btn-default">Send</button>
+			</div>
+		</form>				
 	</div>
 	
 	
 	<div class="alt2">
 		<div class="container">
 			<footer>
-				&copy; 2015 <br />
-				<a href="#contact">Back to top</a>
-				<i class="fa fa-twitter"></i>
+				Copyright &copy; 2015 Dublin Mua
+				<a class="arrow" id="arrow2" href="#contact">&#8679;</a>
 			</footer>
 		</div>
 	</div>
@@ -85,5 +92,12 @@
   });
 });
 	</script>
+	
+	<script>
+function confirmInput() {
+    fname = document.forms[0].click.value;
+    alert("Your message was sent successfully!");
+}
+</script>
 	</body>
 </html>
